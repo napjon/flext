@@ -69,6 +69,10 @@ class Flext:
                 methods=[method]
             )
 
+    def run(self, *args, **kwargs):
+        """Runs the Flask development server."""
+        return self.flask_app.run(*args, **kwargs)
+
     @property
     def app(self):
         """Return the Flask app instance"""
